@@ -1,9 +1,12 @@
 import React from "react";
 import Button from './Button.js';
 import SliceImg from "./SliceImg.js";
-import '../static/ProjectSection.css';
 
 
+
+import projectImage1 from "../static/imgs/lyadar.png"
+import projectImage2 from '../static/imgs/DALL·E 2023-02-26 21.41.25.png'
+import projectImage3 from '../static/imgs/scd41-co2-sensor-module-with-co2-temperature-and-humidity-sensor-pim587.jpg'
 const projects=[
   {
     label:"Lidar",
@@ -13,7 +16,7 @@ const projects=[
     In the first part of the project, an <span>ESP32(server)-PC(client) communication structure</span> is used, which connects through <span>websockets</span>, and the server sends data to the client in string form. Then, in the second part, the client uses two <span>data processing</span> functions to manipulate the data it receives from the server and store it in a <span>PostgreSQL</span> database using an <span>API</span> with <span>POST</span> and <span>GET</span> methods. In the third part, an <span>API</span> is used that connects to a <span>PostgreSQL</span> database to process and store the data. Finally, in the last part, the <span>Javascript canvas library</span> is used to visualize the data in the form of <span>line charts</span>.
     
     This project is an example of how a <span>server-client communication</span> structure can be used to process and store data asynchronously. It also shows how <span>data processing</span> functions can be used to manipulate the data received from the server and how data can be visualized using a <span>Javascript library</span>. Overall, this project can be used as a base for future projects that require <span>real-time data processing</span> and <span>data visualization</span>.`,
-    src:"../imgs/lyadar.png"
+    src:`${projectImage1}`
   },
 
   {
@@ -24,13 +27,13 @@ const projects=[
     Se utilizarán <span>redes neuronales recurrentes (RNN)</span> para predecir el <span>pH de la planta</span> y mostrar los resultados gráficamente por día, lo que optimiza el tiempo del cultivo. Aunque este método es práctico, el <span>costo inicial de inversión</span> es elevado para algunas personas, pero como se producirán <span>vegetales de calidad</span>, pueden ser vendidos como tal.
     
     El sistema hidropónico IoT tiene una funcionalidad añadida que se divide en tres secciones principales: <span>cliente</span>, <span>interfaz gráfica de usuario</span> y <span>servidor</span>. La sección del servidor funciona como intermediario entre el cliente y la interfaz gráfica. Los <span>sensores</span> miden diferentes parámetros como el <span>nivel de pH</span>, la <span>temperatura del agua</span>, la <span>humedad y temperatura del ambiente</span>, y se utilizan para la <span>monitorización en tiempo real y el control</span> del sistema hidropónico NFT.`,
-    src:"../imgs/DALL·E 2023-02-26 21.41.25.png"
+    src:`${projectImage2}`
   },
   {
     label:"MedidorCo2",
     imgFoot:"A picture of a co2 sensor taken from google",
     description:"El proyecto de hydroponia se sostiene sobres tres pilares tecnicos principales, electronica, programacion y el el empleo de concimientos agronos para completar el proyecto, este consite en tomar los datos dede sensores de temperatura y ph para pasarlos a un servidor de firebase, de ahi se pasaron a el ",
-    src:"../imgs/scd41-co2-sensor-module-with-co2-temperature-and-humidity-sensor-pim587.jpg"
+    src:`${projectImage3}`
   }
 ]
 
