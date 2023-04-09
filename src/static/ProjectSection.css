@@ -1,0 +1,226 @@
+@import "colors.css";
+#project-section{
+    --height-HeaderBottom:9%;
+    
+    
+}
+/* Projects /
+  / ======================= */
+#project-section {
+    height: 100vh;
+
+}
+
+#projects{
+    height: 100%; /* altura mínima fija */
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    border: var(--border-color); 
+    transition: 1s;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+}
+
+#project-header{
+    width: 100%;
+    height: var(--height-HeaderBottom);
+    background: var(--background-header);
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top:0;
+    padding: 0 8%;
+    z-index: 100;
+}
+
+.project-box{ /*Boton*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project-title button {
+    display: inline-block;
+    font-family: 'Times New Roman', Times, serif, fantasy;
+    font-weight: bold;
+    text-align: center;
+    background: var(--background-header);
+    color: var(--color-header);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.project-box button {
+    
+    width: auto;
+    height: 100%;
+    padding: 0;
+    transition: ease 0.05s;
+    border-radius: 12px 12px 0px 0px; 
+    border: none;
+    z-index: 100;
+}
+.project-box-selected{ /*boton del header seleccionado*/
+    background: #777;
+    border:1px 1px 0 1px solid black;
+    z-index: 100;
+    transition: 0.3 ease;  
+}
+
+.project-title { /*titulo de los botones del header*/
+    border-radius:7px 7px 0 0;
+}
+
+
+#project-description{
+    width: 100%;
+    height: 82%;
+    background: var(--background-content)
+} 
+#project-description-text{
+    height: auto;
+    padding: 20px 20px 0px 20px;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+#project-description-text::-webkit-scrollbar 
+{
+    width: 12px;               /* width of the entire scrollbar */
+}
+#project-description-text::-webkit-scrollbar-track 
+{
+    background: var(--background-header);        /* color of the tracking area */
+}
+
+#project-description-text::-webkit-scrollbar-thumb 
+{
+    background-color: var(--background-body);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 4px solid var(--background-header);  /* creates padding around scroll thumb */
+}
+.image-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 24px 0;
+}
+.image-caption p{
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: 'Labrada', serif;
+    margin-top: 12px ;
+}
+.slide-img{
+    min-width: 100px;
+    min-height: 100px;
+    width: 50%;
+    height: 50%;
+    
+    max-width: 300px;
+    max-height: 300px;
+    
+    object-fit: contain;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+#slide{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: var(--height-HeaderBottom);
+    position: sticky;
+    bottom: 0;
+    background: var(--background-header);
+}
+#project-selctor {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 100% !important;
+    width: auto;
+    margin: 0 auto;
+}
+.slide-circles {
+    width: 10px;
+    height: 10px;
+    border-radius:50% ;
+    margin-left:4px ;
+    background: #777;
+    z-index: 220;
+}
+.slide-circles:nth-child(2){
+    margin-left:0px;
+}
+.slide-selected{
+    background: plum;
+}
+.buttonSlide button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 3px ;
+    color: #fff;
+}
+.buttonSlide button i{
+    color: #fff;
+}
+.project-selected {
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-decoration-color:  plum;
+    opacity: 1;
+    transition: 1s
+    ;
+}
+
+
+.slide-animation-right {
+    animation: move-right 1s ease;
+    position: relative;
+}
+
+
+
+@keyframes move-right {
+    
+    0% {
+        transform: translateX(0%);
+    }
+    30%{
+        transform: translateX(110%);
+    }
+    31%{
+        left:-220%;
+    }   
+    100%{
+        left: 0%;
+    } 
+}
+
+.slide-animation-left {
+    animation: move-left 1s ease;
+    position: relative;
+}
+
+@keyframes move-left {
+    
+    0% {
+        transform: translateX(0%);
+    }
+    30%{
+        transform: translateX(-110%);
+    }
+    31%{
+        left:220%;
+    }   
+    100%{
+        left: 0%;
+    } 
+}
+
+
+
+

@@ -1,0 +1,84 @@
+
+/* Estilos para el header /
+/ ======================= */
+
+/* Reset */
+
+*{
+  color: #333;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: 0.3s;
+  }
+  /* Body /
+  / ======================= */
+  body {
+    min-width: 468px;
+  } 
+  
+  /* Header /
+  / ======================= */
+  header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  padding: 0 20px;
+  background-color: var(--background-header);
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+  z-index: 200;
+  }
+  .hide-header {
+    transform: translateY(-100%); /*movemos el header fuera de la pantalla*/
+  }
+  #navbar {
+  display: flex;
+  flex-wrap: wrap;
+  }
+  
+  #profile-link {
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  }
+  
+  #navbar a {
+  margin-left: 20px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  }
+  
+  #navbar a:hover {
+  text-decoration: underline;
+  }
+  
+  /* Estilos para el main /
+  / ======================= */
+  main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: auto !important;
+  }
+  section {
+    padding: 0  40px 40px 40px;
+    width: 100%;
+    min-height: 100vh;
+    border: #000;
+  }
+  section:first-child {
+    min-height: 90vh !important;
+  }
+  p{
+    margin-bottom: 10px;
+  }
+  
+  
