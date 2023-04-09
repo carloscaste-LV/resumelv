@@ -1,6 +1,6 @@
 import React from "react";
 import '../static/WelcomeSeccion.css';
-// import Typed from 'typed.js';
+import Typed from 'typed.js';
 import profileImage from '../static/imgs/profile3.jpg'
 
 
@@ -19,18 +19,8 @@ export default class WelcomeSection extends React.Component {
   }
 
   componentWillUnmount() {
-    const script = document.createElement("script");
-  script.src = "https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js";
-  script.async = true;
-  document.body.appendChild(script);
-
-  script.onload = () => {
-    var typed = new window.Typed(".typing", {
-      strings: ["","Web Designer","Web Developer","Graphic Designer","Mecatronic Student"],
-      typeSpeed:100,
-      loop:true
-    });
-  };
+    window.removeEventListener("scroll", this.handleScroll);
+    
   }
 
   handleScroll() {
@@ -55,7 +45,7 @@ export default class WelcomeSection extends React.Component {
           </div>
           <div id="profile-text">
             <h1>My name is Carlos Castellanos</h1>
-            <h2>I a'm a <span className="typing">Mecatronic Ingenier</span></h2>
+            <h2>I a'm a <span className="typing"><MyComponent/></span></h2>
           </div>
         </div>  
           <div id="about">
@@ -68,5 +58,30 @@ export default class WelcomeSection extends React.Component {
       </section>
     );
   }
+}
+
+
+function MyComponent() {
+  // Create reference to store the DOM element containing the animation
+  const el = React.useRef(null);
+
+  React.useEffect(() => {
+    const typed = new Typed(".typing", {
+      strings:["","Web Designer","Web Developer","Graphic Designer","Mecatronic Student"],
+      typeSpeed:100,
+      loop:true
+    });
+
+    return () => {
+      // Destroy Typed instance during cleanup to stop animation
+      typed.destroy();
+    };
+  }, []);
+
+  return (
+    <div className="App">
+      <span ref={el} />
+    </div>
+  );
 }
 
