@@ -1,7 +1,7 @@
 import React from "react";
 import '../static/WelcomeSeccion.css';
 import Typed from 'typed.js';
-
+//import imagen from './/imgs/profile3.jpg'
 
 export default class WelcomeSection extends React.Component {
   constructor(props) {
@@ -44,7 +44,7 @@ export default class WelcomeSection extends React.Component {
         <div id="im">
         <div id="profile">
           <div id="img-container">
-            <img src='../imgs/profile3.jpg' alt="profile img"/>
+            <img src="../imgs/profile3.jpg" alt="profile img"/>
           </div>
           <div id="profile-text">
             <h1>My name is Carlos Castellanos</h1>
