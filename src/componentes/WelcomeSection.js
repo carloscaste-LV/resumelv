@@ -1,6 +1,6 @@
 import React from "react";
 import '../static/WelcomeSeccion.css';
-import Typed from 'typed.js';
+// import Typed from 'typed.js';
 import profileImage from '../static/imgs/profile3.jpg'
 
 
@@ -19,12 +19,18 @@ export default class WelcomeSection extends React.Component {
   }
 
   componentWillUnmount() {
-    window.removeEventListener("scroll", this.handleScroll);
-    var typed = new Typed(".typing",{
-      strings:["","Web Designer","Web Developer","Graphic Designer","Mecatronic Student"],
+    const script = document.createElement("script");
+  script.src = "https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js";
+  script.async = true;
+  document.body.appendChild(script);
+
+  script.onload = () => {
+    var typed = new window.Typed(".typing", {
+      strings: ["","Web Designer","Web Developer","Graphic Designer","Mecatronic Student"],
       typeSpeed:100,
       loop:true
-  })
+    });
+  };
   }
 
   handleScroll() {
