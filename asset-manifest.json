@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/resumelv/static/css/main.54212582.css",
-    "main.js": "/resumelv/static/js/main.0be9bec7.js",
+    "main.js": "/resumelv/static/js/main.96fc23fa.js",
     "static/js/787.ae0d8d37.chunk.js": "/resumelv/static/js/787.ae0d8d37.chunk.js",
     "static/media/DALL·E 2023-02-26 21.41.25.png": "/resumelv/static/media/DALL·E 2023-02-26 21.41.25.357e917d2174888d4703.png",
     "static/media/lyadar.png": "/resumelv/static/media/lyadar.d32ab67c6a9d36f710fc.png",
@@ -9,11 +9,11 @@
     "static/media/scd41-co2-sensor-module-with-co2-temperature-and-humidity-sensor-pim587.jpg": "/resumelv/static/media/scd41-co2-sensor-module-with-co2-temperature-and-humidity-sensor-pim587.1ef2b3976651e8e77158.jpg",
     "index.html": "/resumelv/index.html",
     "main.54212582.css.map": "/resumelv/static/css/main.54212582.css.map",
-    "main.0be9bec7.js.map": "/resumelv/static/js/main.0be9bec7.js.map",
+    "main.96fc23fa.js.map": "/resumelv/static/js/main.96fc23fa.js.map",
     "787.ae0d8d37.chunk.js.map": "/resumelv/static/js/787.ae0d8d37.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.54212582.css",
-    "static/js/main.0be9bec7.js"
+    "static/js/main.96fc23fa.js"
   ]
 }
