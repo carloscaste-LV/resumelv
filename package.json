@@ -5,8 +5,8 @@
   "type": "module",
   "homepage": "http://carloscaste-LV.github.io/resumelv/",
   "scripts": {
-    "predeploy": "npm run dist",
-    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "node index.js",
     "dev": "vite",
     "build": "vite build",
