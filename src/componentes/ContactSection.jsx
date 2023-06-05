@@ -69,21 +69,12 @@ export default class ContactSection extends React.Component {
                                 <h3 className="contact-title ">SEND ME AN EMAIL</h3>
                                 <h4 className="contact-sub-title ">I'M VERY RESPOSIVE TO MESSAGES </h4>
                             </div>
-                            <div id="name" className="form-item">
-                                <input type="text" name="name" className="form-control" placeholder="Name" value={this.state.name} onChange={this.handleInputChange} required/>
-                            </div>
-                            <div id="email" className="form-item ">
-                                <input type="email" name="email" className="form-control" placeholder="Email" value={this.state.email} onChange={this.handleInputChange} required/>
-                            </div>
-                            <div id="subject" className="form-item  ">
-                                <input type="text" name="subject" className="form-control" placeholder="Subject" value={this.state.subject} onChange={this.handleInputChange} required/>
-                            </div>
-                            <div id="message" className="form-item">
-                                <textarea name="message" className="form-control" placeholder="Message" value={this.state.message} onChange={this.handleInputChange} required></textarea>
-                            </div>
-                            <div className="form-item  ">
+                            
+                                <input id="name" type="text" name="name" className="form-control form-item" placeholder="Name" value={this.state.name} onChange={this.handleInputChange} required/>
+                                <input id="email" type="email" name="email" className="form-control form-item" placeholder="Email" value={this.state.email} onChange={this.handleInputChange} required/>
+                                <input id="subject" type="text" name="subject" className="form-control form-item" placeholder="Subject" value={this.state.subject} onChange={this.handleInputChange} required/>
+                                <textarea id="message" name="message" className="form-control form-item" placeholder="Message" value={this.state.message} onChange={this.handleInputChange} required></textarea>
                                 <button type="submit" className="btn">Send Message</button>
-                            </div>
                         </form>
                     </div>
                 </div>
