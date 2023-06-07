@@ -16,6 +16,7 @@ export default class WelcomeSection extends React.Component {
   
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
+    
   }
 
   componentWillUnmount() {
@@ -49,8 +50,8 @@ export default class WelcomeSection extends React.Component {
           </div>
         </div>  
           <div id="about">
-            <h3>About Me</h3>
-            <p>Soy un ingeniero mecatrónico apasionado por la tecnología y la programación. A lo largo de mi carrera he tenido la oportunidad de trabajar en diversos proyectos donde he podido aplicar mis conocimientos en robótica, automatización y control de procesos.</p>
+            <h3 translate="no">About Me</h3>
+            <p translate="no">Soy un ingeniero mecatrónico apasionado por la tecnología y la programación. A lo largo de mi carrera he tenido la oportunidad de trabajar en diversos proyectos donde he podido aplicar mis conocimientos en robótica, automatización y control de procesos.</p>
             <p>Además, durante mi trayectoria profesional me he desarrollado como front-end developer, especializándome en la creación de experiencias de usuario atractivas y funcionales. Me encanta trabajar en equipo y encontrar soluciones creativas e innovadoras para cada proyecto que abordo.</p>
             <p>Considero que mi formación en ingeniería mecatrónica y mi experiencia en desarrollo web me han brindado un conjunto único de habilidades y conocimientos que me permiten abordar desafíos complejos con una visión integral y un enfoque práctico. Estoy comprometido con seguir aprendiendo y mejorando día a día para ofrecer siempre lo mejor de mí en cada proyecto en el que participo.</p>
           </div>
