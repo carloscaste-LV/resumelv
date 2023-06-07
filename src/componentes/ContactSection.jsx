@@ -32,13 +32,13 @@ export default class ContactSection extends React.Component {
 
     render() {
         return (
-            <section id="contact-section">
+            <section id="contact-section ">
                 <div id="contact-box">
                     <div id="contact-info">
                         <div id="contact-titles">
-                            <h2>Contact Me</h2>
-                            <h3 className="contact-title ">Have You Any Questions ?</h3>
-                            <h4 className="contact-sub-title ">I'M AT SERVICES</h4>
+                            <h2 className="translate">Contact Me</h2>
+                            <h3 className="contact-title translate">Have You Any Questions ?</h3>
+                            <h4 className="contact-sub-title translate">I'M AT SERVICES</h4>
                         </div>
                         <div className="contact-info-items">
                             <div className="contact-info-item ">

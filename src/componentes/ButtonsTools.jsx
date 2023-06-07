@@ -44,8 +44,8 @@ export default class ButtonsTools extends React.Component {
     render() {
         return (
             <Button  className="buttons-control" title={this.state.light?
-                <span class="material-symbols-outlined">dark_mode</span>:
-                <span class="material-symbols-outlined">light_mode</span>} 
+                <span className="material-symbols-outlined notranslate">dark_mode</span>:
+                <span className="material-symbols-outlined notranslate">light_mode</span>} 
                 buttonId="lightButton" 
                 key="0" clickButton={this.lightButtonClick}></Button>
         )

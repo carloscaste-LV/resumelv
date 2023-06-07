@@ -11,10 +11,13 @@ import ButtonsTools from './ButtonsTools.jsx';
 
 
 class App extends React.Component{
+  
   componentDidMount() {
     window.scrollTo(0, 0);
     window.onbeforeunload = function () {
       window.scrollTo(0, 0);
+      document.cookie = "cookieName=cookieValue; SameSite=Lax";
+
     }
   }
 

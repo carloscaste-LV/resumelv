@@ -22,17 +22,22 @@ const projects=[
   {
     label:"Hidroponía",
     imgFoot:"illustration created with dalle 2 of a hydroponic system",
-    description:`Este es un proyecto de <span>sistema hidropónico</span> basado en IoT, que utiliza la técnica de <span>flujo laminar de nutrientes</span> (NFT). El proyecto consiste en un <span>bombeo</span> que utiliza <span>canaletas de PVC</span> donde se colocan las plantas, de ahí las plantas reciben <span>nutrientes del agua</span> que se recircula constantemente a través de los tubos.
+    description:`This is an IoT-based <span>hydroponic system</span> project that utilizes the nutrient film technique (NFT). The project consists of a <span>pump</span> that uses PVC channels where the plants are placed. The plants receive <span>nutrients from the water</span> that is constantly recirculated through the tubes.
 
-    Se utilizarán <span>redes neuronales recurrentes (RNN)</span> para predecir el <span>pH de la planta</span> y mostrar los resultados gráficamente por día, lo que optimiza el tiempo del cultivo. Aunque este método es práctico, el <span>costo inicial de inversión</span> es elevado para algunas personas, pero como se producirán <span>vegetales de calidad</span>, pueden ser vendidos como tal.
+    Recurrent neural networks (RNN) will be used to predict the plant's <span>pH</span> and display the results graphically on a daily basis, optimizing the cultivation time. Although this method is practical, the <span>initial investment cost</span> is high for some individuals. However, since it produces <span>high-quality vegetables</span>, they can be sold as such.
     
-    El sistema hidropónico IoT tiene una funcionalidad añadida que se divide en tres secciones principales: <span>cliente</span>, <span>interfaz gráfica de usuario</span> y <span>servidor</span>. La sección del servidor funciona como intermediario entre el cliente y la interfaz gráfica. Los <span>sensores</span> miden diferentes parámetros como el <span>nivel de pH</span>, la <span>temperatura del agua</span>, la <span>humedad y temperatura del ambiente</span>, y se utilizan para la <span>monitorización en tiempo real y el control</span> del sistema hidropónico NFT.`,
+    The IoT hydroponic system has an additional functionality that is divided into three main sections: <span>client</span>, <span>graphical user interface</span>, and <span>server</span>. The server section acts as an intermediary between the client and the graphical interface. <span>Sensors</span> measure different parameters such as <span>pH level</span>, <span>water temperature</span>, <span>ambient humidity and temperature</span>, and are used for real-time monitoring and control of the NFT hydroponic system.`,
     src:`${projectImage2}`
   },
   {
     label:"MedidorCo2",
     imgFoot:"A picture of a co2 sensor taken from google",
-    description:"El proyecto de hydroponia se sostiene sobres tres pilares tecnicos principales, electronica, programacion y el el empleo de concimientos agronos para completar el proyecto, este consite en tomar los datos dede sensores de temperatura y ph para pasarlos a un servidor de firebase, de ahi se pasaron a el ",
+    description:`<span>Monitoreo de CO2</span> de una <span>habitación cerrada</span> con poca ventilación utilizando un sensor SCD41 y una tarjeta STM32. El objetivo es realizar mediciones periódicas de la calidad del aire en las habitaciones debido a la problemática global causada por la pandemia en los últimos dos años. Se busca encontrar soluciones para tener espacios más seguros y controlados, buscando un futuro más prometedor para todos.
+
+
+
+
+`,
     src:`${projectImage3}`
   }
 ]

@@ -45,7 +45,7 @@ export default class WelcomeSection extends React.Component {
           </div>
           <div id="profile-text">
             <h1>My name is Carlos Castellanos</h1>
-            <h2>I a'm a <span className="typing"><MyComponent/></span></h2>
+            <h2>I a'm a <span className="typing notranslate"><MyComponent/></span></h2>
           </div>
         </div>  
           <div id="about">
