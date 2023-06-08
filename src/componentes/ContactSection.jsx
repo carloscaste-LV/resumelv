@@ -63,7 +63,7 @@ export default class ContactSection extends React.Component {
                         </div>
                     </div>
                     <div id="form-group">
-                        <form action="https://formsubmit.co/chukulikis@gmail.com" method="POST" >
+                        <form action="https://formsubmit.co/carlosid62@hotmail.com" method="POST" >
                             <div className="row">
                                 <h3 className="contact-title ">SEND ME AN EMAIL</h3>
                                 <h4 className="contact-sub-title ">I'M VERY RESPOSIVE TO MESSAGES </h4>
