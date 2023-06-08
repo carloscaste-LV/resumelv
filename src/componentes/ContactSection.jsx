@@ -1,5 +1,8 @@
 import React from 'react';
 import '../static/ContactSection.css'
+import number from '../static/imgs/number.png'
+import imeil from '../static/imgs/imeil.png'
+
 //const nodemailer = require("nodemailer");
 //import nodemailer from 'nodemailer';
 
@@ -44,22 +47,18 @@ export default class ContactSection extends React.Component {
                             <div className="contact-info-item ">
                                 <div className="icon"><i className="fa fa-phone"></i></div>
                                 <h4>Call Me On</h4>
-                                <p>+52 3330998810</p>
+                                <img src={number} alt="number"  style={{padding:"5px"}}/>
+
                             </div>
                             <div className="contact-info-item ">
                                 <div className="icon"><i className="fa fa-map-marker-alt"></i></div>
-                                <h4>Office</h4>
-                                <p>Islamaabad</p>
+                                <h4>City Of Residence</h4>
+                                <p>Hermosillo,Sonora,Mex.</p>
                             </div>
                             <div className="contact-info-item ">
                                 <div className="icon"><i className="fa fa-envelope"></i></div>
                                 <h4>Email</h4>
-                                <p>info@hotmail.com</p>
-                            </div>
-                            <div className="contact-info-item ">
-                                <div className="icon"><i className="fa fa-globe-europe"></i></div>
-                                <h4>Website</h4>
-                                <p>domain.com</p>
+                                <img src={imeil} alt="imeil" style={{padding:"3px"}}/>
                             </div>
                         </div>
                     </div>
