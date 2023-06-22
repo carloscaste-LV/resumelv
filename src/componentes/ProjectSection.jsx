@@ -5,8 +5,8 @@ import SliceImg from "./SliceImg.jsx";
 
 
 import projectImage1 from "../static/imgs/lyadar.png"
-import projectImage2 from '../static/imgs/DALL·E 2023-02-26 21.41.25.png'
-import projectImage3 from '../static/imgs/scd41-co2-sensor-module-with-co2-temperature-and-humidity-sensor-pim587.jpg'
+import projectImage2 from '../static/imgs/hydroponics.png'
+import projectImage3 from '../static/imgs/holding sensor.png'
 const projects=[
   {
     label:"Lidar",
@@ -31,13 +31,8 @@ const projects=[
   },
   {
     label:"MedidorCo2",
-    imgFoot:"A picture of a co2 sensor taken from google",
-    description:`<span>Monitoreo de CO2</span> de una <span>habitación cerrada</span> con poca ventilación utilizando un sensor SCD41 y una tarjeta STM32. El objetivo es realizar mediciones periódicas de la calidad del aire en las habitaciones debido a la problemática global causada por la pandemia en los últimos dos años. Se busca encontrar soluciones para tener espacios más seguros y controlados, buscando un futuro más prometedor para todos.
-
-
-
-
-`,
+    imgFoot:"Housing in SolidWorks",
+    description:`<span>Monitoring of CO2</span> in a <span>poorly ventilated, closed room</span> using an SCD41 sensor and an STM32 board. The goal is to perform periodic measurements of air quality in rooms due to the global issues caused by the pandemic in the past two years. Solutions are being sought to create safer and controlled spaces, aiming for a more promising future for everyone.`,
     src:`${projectImage3}`
   }
 ]
